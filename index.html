@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fin Christensen</title>
+    <link rel="stylesheet" href="bulma.min.css">
+    <style>
+      .emoji {
+        width: 1em;
+        height: 1em;
+        vertical-align: sub;
+      }
+      p {
+        padding: 0.2em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero is-light is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item is-active" href="https://like-a-fin.lol">
+                  About
+                </a>
+                <a class="navbar-item" href="https://blog.like-a-fin.lol">
+                  Blog
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-two-thirds">
+              <div class="box">
+                <div class="columns">
+                  <div class="column is-narrow">
+                    <p class="image is-128x128">
+                      <img class="is-rounded" src="gentoo_lary.jpg" alt="Lary the cow">
+                    </p>
+                  </div>
+                  <div class="column">
+                    <strong>Fin Christensen</strong>
+                    <p>
+                      Software developer and student from Magdeburg / Germany.
+                    </p>
+                    <p>
+                      I enjoy programming in
+                      <img src="crab.svg" class="emoji" alt="crab">
+                      Rust, C, Typescript, and
+                      <img src="snake.svg" class="emoji" alt="snake">
+                      Python. I have also successfully implemented several projects
+                      in Go, Java, C#, C++, and Scala.
+                    </p>
+                    <p>
+                      I am using
+                      <img src="cow.svg" class="emoji" alt="cow">
+                      Gentoo Linux with Gnome as my daily driver. I have great
+                      experience in web development, network programming, and
+                      I like
+                      <img src="whale.svg" class="emoji" alt="whale">
+                      Docker and am developing for Kubernetes clusters.
+                    </p>
+                    <p>
+                      I made my
+                      <img src="uni.svg" class="emoji" alt="graduation cap">
+                      bachelor degree in computer science in 2017
+                      and am currently writing my master thesis.
+                    </p>
+                    <p>
+                      <a href="https://github.com/fin-ger">
+                        <img src="octopus.svg" class="emoji" alt="heart">
+                        GitHub <small><code>github.com/fin-ger</code></small>
+                      </a>
+                      <br>
+                      <a href="https://gitlab.com/fin-ger">
+                        <img src="fox.svg" class="emoji" alt="heart">
+                        GitLab <small><code>gitlab.com/fin-ger</code></small>
+                      </a>
+                      <br>
+                      <a href="https://weirder.earth/@fin_ger">
+                        <img src="elephant.svg" class="emoji" alt="heart">
+                        Mastodon <small><code>weirder.earth/@fin_ger</code></small>
+                      </a>
+                    </p>
+                    <p>
+                      <div class="field is-grouped is-grouped-multiline">
+                        <div class="control">
+                          <a href="https://liberapay.com/fin-ger/">
+                            <div class="tags has-addons">
+                              <span class="tag is-dark">donate</span>
+                              <span class="tag is-warning">liberapay</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="control">
+                          <a href="https://github.com/sponsors/fin-ger">
+                            <div class="tags has-addons">
+                              <span class="tag is-dark">donate</span>
+                              <span class="tag is-info">GitHub Sponsors</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero footer: will stick at the bottom -->
+      <div class="hero-foot">
+        <div class="content has-text-centered">
+          Made with
+          <img src="heart.svg" class="emoji" alt="heart">
+          in Magdeburg using Free and Open Source Software.
+          <br>
+          <small>
+            This site uses <a href="https://twemoji.twitter.com">Twemoji</a>
+          </small>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+          // Add a click event on each of them
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
